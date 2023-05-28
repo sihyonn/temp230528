@@ -1,0 +1,338 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #21212B;
+}
+
+a {
+  text-decoration: none;
+  color: #21212B;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.section {
+  height: 100vh;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.mainbox {
+  width: 100%;
+  height: 480px;
+  background-color: #f5f5f5;
+  position: absolute;
+  top: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: 600px;
+  height: 100px;
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.title__text {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.title__line {
+  border: 3px solid;
+  width: 100%;
+  margin-top: 6px;
+}
+
+
+/* 나의 수도 소비량 */
+.watergraph {
+  width: 800px;
+  height: 400px;
+}
+
+.prevbtn .material-symbols-outlined {
+  font-size: 100px;
+}
+
+.nextbtn .material-symbols-outlined {
+  font-size: 100px;
+}
+
+
+
+
+
+
+
+/* AI 솔루션 */
+.solutionbox {
+  width: 900px;
+  height: 350px;
+  position: absolute;
+  top: 40px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 15px 10px -15px #111;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.solutionbox__title {
+  width: 100%;
+  height: 50px;
+  font-size: 40px;
+  margin: 30px 30px;
+  font-family: 'Black Han Sans';
+
+}
+
+.solutionbox__content {
+  width: 90%;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.selftestlink {
+  position: absolute;
+  bottom: 25px;
+  right: 400px;
+  padding: 10px;
+  /* border: 1px solid #ccc;*/
+  /* box-shadow: 0px 15px 10px -15px #111; */
+  width: 150px;
+  height: 40px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+
+.selftestlink span {
+  font-weight: 600;
+  color: white;
+  background: rgb(0, 172, 238);
+  background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+  display: block;
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  margin: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.selftestlink span:nth-child(1) {
+  box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+
+.selftestlink span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+
+.selftestlink:hover span:nth-child(1) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.selftestlink:hover span:nth-child(2) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+
+/* 마이페이지 */
+.mybox {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 100px;
+  /* border: 1px solid #ccc; */
+  border-radius: 40px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 15px 10px -15px #111;
+}
+
+.mybox__title {
+  position: absolute;
+  left: 50px;
+  top: 30px;
+  font-size: 60px;
+  font-family: 'Black Han Sans';
+}
+
+.mybox__content {
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  left: 150px;
+  bottom: 100px;
+  display: flex;
+}
+
+.mybox__content .myBtn {
+  width: 180px;
+}
+
+.myBtn .btn {
+  font-size: 25px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+
+.myBtn .btn .active {
+  font-weight: bold;
+}
+
+.mybox__content .line {
+  border: 2px solid #707070;
+}
+
+.each_content {
+  display: flex;
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  right: 150px;
+  margin-left: 50px;
+  flex: 1;
+}
+
+.btnContent {
+  opacity: 0;
+  transition: opacity 1s ease;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  display: none;
+
+}
+
+#infoContent {
+  position: absolute;
+}
+
+.infolist li {
+  margin-bottom: 20px;
+}
+
+.infolist__title {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-family: 'Black Han Sans';
+}
+
+.infolist__content {
+  width: 250px;
+  height: 30px;
+  background-color: #E2E2E266;
+  border-radius: 4px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+}
+
+
+.infolist__content span {
+  font-size: 18px;
+}
+
+.nickname {
+  display: flex;
+}
+
+
+/* 내 지갑 내용 */
+#walletContent {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.mycoin {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.mycoin__title {
+  font-family: 'Black Han Sans';
+}
+
+.mycoin__amount {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.payment {
+  margin-top: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.payment__title {
+  font-family: 'Black Han Sans';
+  font-size: 30px;
+}
+
+.payment__content {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+}

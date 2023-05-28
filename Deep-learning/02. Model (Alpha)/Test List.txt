@@ -1,0 +1,2 @@
+1. Batch_size : 12의 배수, others
+2. Weight-normalization

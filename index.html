@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MULBIT</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script defer src="./main.js"></script>
+</head>
+
+<body>
+
+  <!-- 나의 수도 소비량 -->
+  <div class="section" id="section2">
+    <div class="mainbox">
+      <button class="prevbtn">
+        <span class="material-symbols-outlined">
+          navigate_before
+        </span>
+      </button>
+
+      <div class="watergraph">
+        <div id="chart"></div>
+      </div>
+
+      <button class="nextbtn">
+        <span class="material-symbols-outlined">
+          navigate_next
+        </span>
+      </button>
+    </div>
+
+    <div class="title">
+      <div class="title__text">
+        나의 수도 소비량
+      </div>
+      <div class="title__line">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- AI 솔루션 -->
+  <div class="section" id="section4">
+    <div class="mainbox">
+      <div class="solutionbox">
+        <div class="solutionbox__title">
+          000님의 솔루션입니다
+        </div>
+        <div class="solutionbox__content">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+          sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+          PageMaker including versions of Lorem Ipsum.Contrary to popular belief, Lorem Ipsum is not simply random text.
+          It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+          McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
+          words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+          literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
+          Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a
+          treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem
+          ipsum dolor sit amet..", comes from a line in section 1.10.32.
+        </div>
+      </div>
+      <!-- 자가진단 바로가기 -->
+      <a class="selftestlink" href="./selftest.html"><span>Go!</span><span>자가진단 바로가기</span></a>
+    </div>
+    <div class="title">
+      <div class="title__text">
+        AI 솔루션
+      </div>
+      <div class="title__line">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 마이페이지 -->
+  <div class="section" id="mypage">
+    <!-- 마이페이지 box는 다름! -->
+    <div class="mybox">
+      <div class="mybox__title">
+        마이페이지
+      </div>
+
+      <div class="mybox__content">
+        <ul class="myBtn">
+          <li>
+            <button class="btn" id="infoBtn">내 정보</button>
+          </li>
+          <li>
+            <button class="btn" id="walletBtn">내 지갑</button>
+          </li>
+        </ul>
+
+        <div class="line"></div>
+
+        <div class="each_content">
+          <!-- 내정보 버튼 눌렀을 때 보여지는 내용 -->
+          <div id="infoContent" class="btnContent">
+            <ul class="infolist">
+              <li>
+                <div class="infolist__title">카카오 ID</div>
+                <div class="infolist__content">
+                  <span>춘식이</span>
+                </div>
+              </li>
+              <li>
+                <div class="infolist__title">닉네임</div>
+                <div class="nickname">
+                  <div class="infolist__content">
+                    <span>물빛최고</span>
+                  </div>
+                  <button id="update">변경</button>
+                </div>
+              </li>
+              <li>
+                <div class="infolist__title">주소</div>
+                <div class="infolist__content">
+                  <span>광주광역시 북구 용봉동</span>
+                </div>
+              </li>
+              <li>
+                <div class="infolist__title">전자납부번호</div>
+                <div class="infolist__content" type="text">
+                  <span>12345678</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 내지갑 버튼 눌렀을 때 보여지는 내용 -->
+          <div id="walletContent" class="btnContent">
+            <!-- 코인보유량 -->
+            <div class="mycoin">
+              <span class="mycoin__title">나의 물빛코인</span>
+              <span class="mycoin__amount">36,000</span>
+            </div>
+            <!-- 지급내역 확인 -->
+            <div class="payment">
+              <span class="payment__title">발급 내역 확인</span>
+              <span class="payment__content">발급내역이 이렇습니다.아아아아아아ㅏㅇ아</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
